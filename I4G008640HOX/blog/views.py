@@ -13,7 +13,7 @@ class PostListView(ListView):
     # PostCreateview
 class PostCreateView(CreateView):
     model = Post
-    fields = ["__all__"]
+    fields = "__all__"
     success_url = reverse_lazy("blog:all")
 
     # PostDetailview
@@ -23,10 +23,10 @@ class PostDetailView(DetailView):
     # PostUpdateview
 class PostUpdateView(UpdateView):
     model = Post
-    fields = ["__all__"]
+    fields = "__all__"
     success_url = reverse_lazy("blog:all")
     # Postdeleteview
 class PostDeleteView(DeleteView):
     model = Post
-    fields = ["__all__"]
+    fields = "__all__"
     success_url = reverse_lazy("blog:all")
